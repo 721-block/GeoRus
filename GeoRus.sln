@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoRus.Server", "GeoRus.Server\GeoRus.Server.csproj", "{582BF4D6-5708-46A8-B882-7895D682A967}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "georus.client", "georus.client\georus.client.esproj", "{0BDE1D7F-E83F-4C27-ACD7-92B298E332EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{582BF4D6-5708-46A8-B882-7895D682A967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582BF4D6-5708-46A8-B882-7895D682A967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582BF4D6-5708-46A8-B882-7895D682A967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582BF4D6-5708-46A8-B882-7895D682A967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDE1D7F-E83F-4C27-ACD7-92B298E332EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDE1D7F-E83F-4C27-ACD7-92B298E332EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDE1D7F-E83F-4C27-ACD7-92B298E332EC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0BDE1D7F-E83F-4C27-ACD7-92B298E332EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDE1D7F-E83F-4C27-ACD7-92B298E332EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDE1D7F-E83F-4C27-ACD7-92B298E332EC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACF1C99A-12E3-4441-906B-27914E7DEE25}
+	EndGlobalSection
+EndGlobal
