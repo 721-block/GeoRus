@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5874d14a-511c-4846-8583-a851351f250a&lang=ru_RU"
+            type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        // Функция ymaps.ready() будет вызвана, когда
+        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+        ymaps.ready(init);
+
+        function init() {
+            // Создание карты.
+            var myMap = new ymaps.Map("map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [56.838011, 60.597465],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 10
+            });
+
+            var myGeoObject1 = new ymaps.GeoObject({
+                // Определение геометрии" Point".
+                geometry: {
+                    type: "Point",
+                    coordinates: [56.861159, 61.326176]
+                },
+                // Определение данных геообъекта.
+                properties: {
+                    hintContent: "Белоярская АЭС",
+                    balloonContentHeader: "Белоярская АЭС",
+                    balloonContentBody: "Электроэнергетика, Атомная энергетика"
+                }
+            }, {
+                // Установка предустановки для метки с точкой и без содержимого.
+                preset: "islands#greenDotIcon",
+                // Включение перетаскивания.
+                draggable: true,
+                // Переопределение макета для содержимого в нижней части воздушного шара.
+                balloonContentFooterLayout: ymaps.templateLayoutFactory.createClass(
+                    'coordinates: {{ geometry.coordinates }}'
+                ),
+            });
+// Добавление геообъекта на карту.
+
+            var myGeoObject2 = new ymaps.GeoObject({
+                // Определение геометрии" Point".
+                geometry: {
+                    type: "Point",
+                    coordinates: [56.884696, 60.592803]
+                },
+                // Определение данных геообъекта.
+                properties: {
+                    hintContent: "УЗТМ",
+                    balloonContentHeader: "УЗТМ",
+                    balloonContentBody: "Машиностроение",
+                }
+            }, {
+                // Установка предустановки для метки с точкой и без содержимого.
+                preset: "islands#redDotIcon",
+                // Переопределение макета для содержимого в нижней части воздушного шара.
+                balloonContentFooterLayout: ymaps.templateLayoutFactory.createClass(
+                    'population: {{ properties.population }}, coordinates: {{ geometry.coordinates }}'
+                )
+            });
+            
+            var myGeoObject3 = new ymaps.GeoObject({
+                // Определение геометрии" Point".
+                geometry: {
+                    type: "Point",
+                    coordinates: [56.750259, 60.802081]
+                },
+                // Определение данных геообъекта.
+                properties: {
+                    hintContent: "SVX Кольцово",
+                    balloonContentHeader: "Аэропорт Кольцово (SVX)",
+                    balloonContentBody: "Транспорт, Авиация",
+                }
+            }, {
+                // Установка предустановки для метки с точкой и без содержимого.
+                preset: "islands#yellowDotIcon",
+                // Переопределение макета для содержимого в нижней части воздушного шара.
+                balloonContentFooterLayout: ymaps.templateLayoutFactory.createClass(
+                    'population: {{ properties.population }}, coordinates: {{ geometry.coordinates }}'
+                )
+            });
+// Добавление геообъекта на карту.
+
+            myMap.geoObjects.add(myGeoObject1);
+            myMap.geoObjects.add(myGeoObject2);
+            myMap.geoObjects.add(myGeoObject3);
+        }
+    </script>
+
+</head>
+<body>
+<div id="map" style="width: 1920px; height: 1080px; margin: auto"></div>
+</body>
+</html>
