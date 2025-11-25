@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Презентация проекта - Разработка приложения для маршрутов «Майской прогулки»</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-color: #000; overflow: hidden; }
+        .presentation-container { width: 100vw; height: 100vh; position: relative; }
+        .slide { width: 100%; height: 100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.5s ease-in-out; }
+        .slide.active { opacity: 1; }
+        .slide iframe { width: 100%; height: 100%; border: none; }
+        .slide-counter { position: fixed; top: 30px; right: 30px; z-index: 1000; background: rgba(0,0,0,0.8);
+            color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; backdrop-filter: blur(10px);}
+        .keyboard-hint { position: fixed; bottom: 30px; right: 30px; z-index: 1000; background: rgba(0,0,0,0.8);
+            color: white; padding: 8px 12px; border-radius: 15px; font-size: 12px; backdrop-filter: blur(10px); opacity: 0.7;}
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+
+        <div class="slide active" data-slide="0">
+            <iframe src="%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20-%20%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%B2%20%C2%AB%D0%9C%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B8%C2%BB_files/presentation_slide01.htm" loading="lazy"></iframe>
+        </div>
+
+        <div class="slide" data-slide="1">
+            <iframe src="%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20-%20%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%B2%20%C2%AB%D0%9C%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B8%C2%BB_files/presentation_slide02.htm" loading="lazy"></iframe>
+        </div>
+
+        <div class="slide" data-slide="2">
+            <iframe src="%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20-%20%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%B2%20%C2%AB%D0%9C%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B8%C2%BB_files/presentation_slide03.htm" loading="lazy"></iframe>
+        </div>
+
+        <div class="slide" data-slide="3">
+            <iframe src="%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20-%20%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%B2%20%C2%AB%D0%9C%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B8%C2%BB_files/presentation_slide04.htm" loading="lazy"></iframe>
+        </div>
+
+        <div class="slide" data-slide="4">
+            <iframe src="%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20-%20%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%B2%20%C2%AB%D0%9C%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B8%C2%BB_files/presentation_slide05.htm" loading="lazy"></iframe>
+        </div>
+
+        <div class="slide" data-slide="5">
+            <iframe src="%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20-%20%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%B2%20%C2%AB%D0%9C%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B8%C2%BB_files/presentation_slide06.htm" loading="lazy"></iframe>
+        </div>
+
+        <div class="slide" data-slide="6">
+            <iframe src="%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20-%20%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%B2%20%C2%AB%D0%9C%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B8%C2%BB_files/presentation_slide07.htm" loading="lazy"></iframe>
+        </div>
+
+        <div class="slide" data-slide="7">
+            <iframe src="%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20-%20%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%B2%20%C2%AB%D0%9C%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B8%C2%BB_files/presentation_slide08.htm" loading="lazy"></iframe>
+        </div>
+
+
+    </div>
+
+      <div class="slide-counter">
+          <span id="current-slide">1</span> / <span id="total-slides">8</span>
+      </div>
+      <div class="keyboard-hint">
+          ← → / Space / Home / End
+      </div>
+  
+      <script>
+          let currentSlide = 0;
+          const slides = document.querySelectorAll('.slide');
+          const totalSlides = slides.length;
+  
+          function updateSlideDisplay() {
+              slides.forEach((slide, index) => {
+                  if (index === currentSlide) {
+                      slide.classList.add('active');
+                  } else {
+                      slide.classList.remove('active');
+                  }
+              });
+              document.getElementById('current-slide').textContent = currentSlide + 1;
+          }
+  
+          function goToSlide(i) {
+              if (i >= 0 && i < totalSlides) {
+                  currentSlide = i;
+                  updateSlideDisplay();
+              }
+          }
+  
+          function nextSlide() {
+              if (currentSlide < totalSlides - 1) {
+                  currentSlide++;
+                  updateSlideDisplay();
+              }
+          }
+  
+          function prevSlide() {
+              if (currentSlide > 0) {
+                  currentSlide--;
+                  updateSlideDisplay();
+              }
+          }
+  
+          window.addEventListener('keydown', e => {
+              if (e.key === 'ArrowRight' || e.key === ' ') {
+                  e.preventDefault();
+                  nextSlide();
+              } else if (e.key === 'ArrowLeft') {
+                  e.preventDefault();
+                  prevSlide();
+              } else if (e.key === 'Home') {
+                  e.preventDefault();
+                  goToSlide(0);
+              } else if (e.key === 'End') {
+                  e.preventDefault();
+                  goToSlide(totalSlides - 1);
+              }
+          });
+  
+          window.addEventListener('mouseover', () => {
+              window.focus();
+          });
+          window.addEventListener('message', e => {
+              if (e.data.type === 'go-next') {
+                  nextSlide();
+              } else if (e.data.type === 'go-prev') {
+                  prevSlide();
+              }
+          });
+          if (totalSlides > 0) {
+              document.getElementById('total-slides').textContent = totalSlides;
+              updateSlideDisplay();
+          }
+      </script>
+
+
+</body></html>
